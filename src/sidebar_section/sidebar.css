@@ -1,0 +1,67 @@
+.sidebarData{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 160px;
+    height: 100%;
+  
+    background-color: rgba(0, 0, 255, 0.182);
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+.header_rec{
+    font-size: 11.2px;
+    /* margin-top: 10px; */
+    margin-left: 15px;
+    padding-top: 15px;
+}
+
+.close{
+    
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.close button{
+    width: 137px;
+    height: 25px;
+    color: rgba(128, 0, 128, 0.742);
+    background-color: white;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.5s ease;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+.close button:hover{
+    color: white;
+    background-color: rgba(128, 0, 128, 0.742);
+}
+.prediction{
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.btn{
+    width: 137px;
+    height: 30px;
+    color: rgba(128, 0, 128, 0.742);
+    background-color: white;
+    font-size: 14px;
+    margin-top: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.5s ease;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+.btn:hover{
+    color: white;
+    background-color: rgba(128, 0, 128, 0.742);
+}
+.btn.active {
+    background-color: rgba(128, 0, 128, 0.742);
+    color: white;
+}
+.btn.active:hover {
+    background-color: rgba(128, 0, 128, 0.742);
+    cursor: pointer;
+  }

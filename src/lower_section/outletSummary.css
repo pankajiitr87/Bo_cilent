@@ -1,0 +1,66 @@
+.outlet{
+    /* flex: 1; */
+    
+    width: 100%;
+    /* height: 40%; */
+    /* height: 335px; */
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+    /* margin-left: 25px; */
+}
+.header_outlet{
+  margin-left: 120px;
+  color: rgba(128, 0, 128, 0.742);
+  font-weight: bold;
+}
+.table-container{
+  overflow-y: scroll;
+  height: 314px;
+}
+/* Table styles */
+.table {
+    /* width: 15px; */
+    border-collapse: collapse;
+    table-layout: fixed;
+    margin-left: 3px;
+    margin-right: 1px;
+    margin-bottom: 5px;
+    font-size: x-small;
+  }
+  
+  .thead {
+    background-color: #fac29a;
+    color: white;
+    position: sticky;
+    top: 0;
+  }
+  
+  .td_ {
+    padding: 15px 15px;
+    border: 2px solid rgba(0, 0, 0, 0.082);
+    text-align: left;
+  }
+  .th_ {
+    padding: 15px 15px;
+    border: 2px solid rgba(0, 0, 0, 0.082);
+    text-align: left;
+  }
+  
+  /* tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  } */
+  
+  tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  th {
+    background-color: rgba(245, 229, 166, 0.5);
+    color: rgba(128, 0, 128, 0.742);
+  }
+  
+  td {
+    color: #333;
+  }
+  .csv .highlight {
+    background-color: rgba(245, 229, 166, 0.5); /* Highlight color */
+}

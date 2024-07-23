@@ -1,0 +1,23 @@
+.highlight-yea {
+    /* font-size: 10px; */
+    /* font-weight: bold; */
+    /* padding-left: 50px;
+    margin-left: 50px; */
+    /* fill: #ff6347;  */
+  }
+  .sales_chart{
+    /* margin-right: 5px; */
+
+    /* overflow: scroll; */    
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+
+  }
+  .salesHeader{
+    margin-left: 200px;
+    color: rgba(128, 0, 128, 0.742);
+    font-weight: bold;
+  }
+  .sales_chart Linchart{
+    margin-right: 15px;
+  }
+  

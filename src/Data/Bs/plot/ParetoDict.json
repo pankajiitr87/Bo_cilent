@@ -1,0 +1,38 @@
+[
+    {
+        "Segments": "MayOnly",
+        "Amount": 31559071.0
+    },
+    {
+        "Segments": "CannotLose",
+        "Amount": 79250.0
+    },
+    {
+        "Segments": "Champion",
+        "Amount": 7578841.0
+    },
+    {
+        "Segments": "Hibernating",
+        "Amount": 30806.0
+    },
+    {
+        "Segments": "Loyal",
+        "Amount": 3349222.0
+    },
+    {
+        "Segments": "NeedAttention",
+        "Amount": 60361.0
+    },
+    {
+        "Segments": "New",
+        "Amount": 6368681.0
+    },
+    {
+        "Segments": "OTC",
+        "Amount": 3855848.0
+    },
+    {
+        "Segments": "PotentialLoyal",
+        "Amount": 6439127.0
+    }
+]

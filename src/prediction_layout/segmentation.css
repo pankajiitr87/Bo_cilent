@@ -1,0 +1,68 @@
+.segmentation{
+    /* flex: 1; */
+    /* overflow: scroll; */
+    width: 100%;
+    /* height: 300px; */
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+    /* margin-left: 25px; */
+}
+.header_segmentation{
+  margin-left: 260px;
+  color: rgba(128, 0, 128, 0.742);
+  font-weight: bold;
+}
+
+/* Table styles */
+.segmentation_table{
+  max-height: 270px; /* Adjust height as needed */
+  overflow-y: auto;
+  display: block;
+  margin-top: 5px;
+}
+.table_S {
+    table-layout: fixed;
+    border-collapse: collapse;
+    margin-left: 3px;
+    margin-right: 1px;
+    margin-bottom: 5px;
+    font-size: small;
+    
+  }
+  
+  .thead_S {
+    background-color: #fac29a;
+    color: white;
+    position: sticky;
+    top: 0;
+  }
+  
+  .td_S {
+    padding: 8px 8px;
+    border: 2px solid rgba(0, 0, 0, 0.082);
+    text-align: left;
+  }
+  .th_S {
+    padding: 8px 10px;
+    border: 2px solid rgba(0, 0, 0, 0.082);
+    text-align: left;
+  }
+  
+  /* tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  } */
+  
+  tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  th {
+    background-color: rgba(245, 229, 166, 0.5);
+    color: rgba(128, 0, 128, 0.742);
+  }
+  
+  td {
+    color: #333;
+  }
+  .csv .highlight {
+    background-color: rgba(245, 229, 166, 0.5); /* Highlight color */
+}

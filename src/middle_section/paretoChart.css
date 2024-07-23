@@ -1,0 +1,13 @@
+.pareto{
+    height: 280px;
+    /* margin-left: 10px; */
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+}
+.header_{
+    margin-left: 50px;
+    color: rgba(128, 0, 128, 0.742);
+    font-weight: bold;
+}
+.series{
+    font-size: small;
+}

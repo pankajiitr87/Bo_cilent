@@ -1,0 +1,20 @@
+.simpleLine{
+    margin-left: 5px;
+    margin-right: 5px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+}
+.header_simple{
+    margin-left: 120px;
+    color: rgba(128, 0, 128, 0.742);
+    font-weight: bold;
+}
+/* .recharts-cartesian-axis-line {
+    stroke: black;
+  }
+   */
+  /* .recharts-cartesian-grid-horizontal line {
+    stroke-dasharray: 3; 
+  } */
+  /* .recharts-cartesian-grid-vertical line {
+    stroke-dasharray: 0; 
+  } */

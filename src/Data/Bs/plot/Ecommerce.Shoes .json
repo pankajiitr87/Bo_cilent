@@ -1,0 +1,22 @@
+[{
+  "_id": {
+    "$oid": "6697ac534715beeeba8c036e"
+  },
+  "name": "Champion",
+  "totalcust": 1805,
+  "predcust": 1779,
+  "actualtxn": 85,
+  "realised": 85,
+  "notrealised": 0
+},
+{
+  "_id": {
+    "$oid": "6697ac534715beeeba8c036f"
+  },
+  "name": "Loyal",
+  "totalcust": 4971,
+  "predcust": 4277,
+  "actualtxn": 74,
+  "realised": 71,
+  "notrealised": -300
+}]
