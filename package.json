@@ -39,7 +39,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "proxy": "http://192.168.15.192:4000",
+  "proxy": "https://bo-server-side-1.onrender.com",
   "eslintConfig": {
     "extends": [
       "react-app",
