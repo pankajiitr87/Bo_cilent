@@ -106,7 +106,7 @@ function App() {
     console.log('in fetchdat');
     try {
       console.log('in try block');
-      const response = await axios.post('/downloadData', { filePath });
+      const response = await axios.post('https://bo-server-side.onrender.com/downloadData', { filePath });
       console.log('Server response:', response);
       response.data[0].plots.forEach(handleFileData);
     } catch (error) {
@@ -129,7 +129,7 @@ function App() {
       
       // Send event.data to Node.js server
       try {
-        const response = await axios.post('/downloadData', { filePath: event.data });
+        const response = await axios.post('https://bo-server-side.onrender.com/downloadData', { filePath: event.data });
         console.log('Server response:', response.data);
         console.log('response.data[0].plots =', response.data[0].plots);
         // Check if `response.data` and `response.data.plots` are defined and are arrays
