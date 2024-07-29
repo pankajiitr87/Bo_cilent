@@ -9,7 +9,6 @@ import Chart, {
   ConstantLine,
   Label,
 } from "devextreme-react/chart";
-// import ParetoDict from "../plot/ParetoDict.json";
 import './paretoChart.css';
 
 const ParetoChart = (props) => {

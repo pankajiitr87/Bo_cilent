@@ -7,7 +7,6 @@ import {
   Tooltip,
   Legend,
 } from "recharts";
-// import ReturningCustomer from "../plot/ReturningCustomer.json";
 import './simpleLine.css'; 
 
 export default function SimpleLineChart(props) {

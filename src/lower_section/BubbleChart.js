@@ -1,6 +1,5 @@
 import React from 'react'
 import Plot from 'react-plotly.js';
-// import BubbleChart from '../data_files/BubbleChart.json';
 
 export default function BubbleChart() {
     const dataPoints = {

@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import './boxes.css';
 import { FaUser } from 'react-icons/fa';
 import { GrTransaction, GrUserNew } from 'react-icons/gr';
-import DataDict from '../Data/Bs/plot/DataDict.json'
 import { GoNumber } from 'react-icons/go';
 import { FcSalesPerformance } from 'react-icons/fc';
 

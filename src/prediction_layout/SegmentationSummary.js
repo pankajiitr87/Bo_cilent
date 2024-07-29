@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import Papa from "papaparse";
-// import SegmentationSummary_data from '../plot/Segmentation.csv';
 import './segmentation.css';
 
 export default function SegmentationSummary(props) {

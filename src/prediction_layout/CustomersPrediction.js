@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import Papa from "papaparse";
-// import customersPrediction_data from '../plot/Watch_1086_Jun24_Predictions.csv';
 import './customersPrediction.css';
 
 export default function CustomersPrediction(props) {

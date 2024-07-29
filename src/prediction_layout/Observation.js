@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-// import Observation_data from '../plot/observation.json';
 import './observation.css';
 
 export default function Observation(props) {
