@@ -3,6 +3,7 @@ import './header.css';
 
 export default function Header(props) {
   console.log('props.layout =', props.layout);
+  console.log('props.userInfoo =', props.userInfoo);
   const info = props.userInfoo.split('/').join('-')
   console.log('info in header =', info);
   return (

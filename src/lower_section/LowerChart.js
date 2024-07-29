@@ -1,12 +1,7 @@
 import React from 'react'
 import './lowerChart.css';
-// import { PI } from 'chart.js/helpers';
-
-import PiChart from '../PiChart';
-import ParetoChart from '../middle_section/ParetoChart';
 import SimpleLineChart from './SimpleLineChart';
 import SalesPredictionChart from './SalesPredictionChart';
-import BubbleChart from './BubbleChart';
 import OutletSummary from './OutletSummary';
 
 export default function LowerChart(props) {
