@@ -117,7 +117,7 @@ function App() {
   // Handle postMessage events
   const handleMessage = async (event) => {
     console.log('event.data =', event.data);
-    console.log('Type of event.data:', typeof event.data);
+    console.log('Type of  event.data:', typeof event.data);
 
     if (typeof event.data === 'string') {
       setUserInfo(event.data )
