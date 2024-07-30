@@ -12,7 +12,7 @@ export default function Sidebar(props) {
       };
     
     const handleClose =() => {
-        window.location.reload();
+        window.location.reload(window.location.href); // This will refresh the page
     }
   return (
     <div className='sidebarData'>
