@@ -30,10 +30,8 @@ function App() {
   const getQueryParams = () => {
     const urlParams = new URLSearchParams(window.location.search);
     return {
-      domain: urlParams.get('domain'),
       clientId: urlParams.get('clientId'),
-      month: urlParams.get('month'),
-      year: urlParams.get('year')
+      date: urlParams.get('date')
     };
   };
 
@@ -81,17 +79,17 @@ function App() {
 
   // Function to display or process the query parameters
   const processInitialParams = () => {
-    const { domain, clientId, month, year } = getQueryParams();
-    if (domain || clientId || month || year) {
-      const message = `${domain}/${clientId}/${month}/${year}`;
+    const {clientId, date } = getQueryParams();
+    if ( clientId || date) {
+      const message = `${clientId}/${date}`;
       console.log('message in processInitialParams =', message);
       setUserInfo(message)
       console.log('Initial message from URL:', message);
-      let pathParts = message.split('/');
-      let basePath = pathParts.slice(0, 2).join('/');
+      // let pathParts = message.split('/');
+      // let basePath = pathParts.slice(0, 2).join('/');
 
       // localStorage.setItem('path', basePath);
-      setSs(basePath);
+      setSs(message);
 
       // Optionally, you can fetch data based on the URL message here
       console.log('end of processInitialParams');
@@ -121,11 +119,11 @@ function App() {
 
     if (typeof event.data === 'string') {
       setUserInfo(event.data )
-      let pathParts = event.data?.split('/');
-      let basePath = pathParts.slice(0, 2).join('/');
-      console.log('basePath in handleMessage =', basePath);
-      localStorage.setItem('path', basePath);
-      setSs(basePath);
+      // let pathParts = event.data?.split('/');
+      // let basePath = pathParts.slice(0, 2).join('/');
+      // console.log('basePath in handleMessage =', basePath);
+      // localStorage.setItem('path', basePath);
+      setSs(event.data);
       
       // Send event.data to Node.js server
       try {
