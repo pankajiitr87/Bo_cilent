@@ -10,20 +10,6 @@ export default function OutletSummary(props) {
     useEffect(() => {
         const loadCsvData = async () => {
             console.log('in loadCsvData function');
-            // try {
-            //     // Construct the relative path to fetch the CSV file from the specified directory
-            //     const csvPath = require(`../${props.pathS}/plot/OutletSummary.csv`);
-            //     console.log('csvPath =', csvPath);
-                
-            //     // Fetch the CSV file as a text resource
-            //     const response = await fetch(csvPath);
-            //     console.log('response =', response);
-            //     if (!response.ok) {
-            //         throw new Error(`HTTP error! Status: ${response.status}`);
-            //     }
-            //     const textData = await response.text();
-
-            //     console.log('CSV content:', textData);
                 
                 // Parse the CSV data using PapaParse
                 Papa.parse(props.outletSummaryyy, {
@@ -41,10 +27,6 @@ export default function OutletSummary(props) {
                         setError("Failed to parse CSV data.");
                     }
                 });
-            // } catch (err) {
-            //     console.error("Error loading CSV data:", err);
-            //     setError("Failed to load data. Please check the path.");
-            // }
         };
 
         if (props.outletSummaryyy) {

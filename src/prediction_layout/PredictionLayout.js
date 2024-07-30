@@ -23,7 +23,6 @@ export default function PredictionLayout(props) {
       </div>
       <div className='right_div'>
         <div>
-          {/* <h1>Customers prediction</h1> */}
           <CustomersPrediction
             pathS={props.path}
             predictionSummaryyy={props.predictionSummaryy}

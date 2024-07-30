@@ -20,14 +20,10 @@ const SalesPredictionChart = (props) => {
     useEffect(() => {
         const loadJsonData = async () => {
           try {
-            // Dynamically import the JSON file based on props.pathS
-            // const jsonModule = await import(`../${props.pathS}/plot/SalesPrediction.json`);
-            // console.log('jsonModule.default =', jsonModule.default);
             // Set the imported data to the state
-            setData(props.salesPredictionnn); // Use jsonModule.default to get the actual data
+            setData(props.salesPredictionnn);
           } catch (err) {
             console.error("Error loading JSON data:", err);
-            // setError("Failed to load data. Please check the path.");
           }
         };
     

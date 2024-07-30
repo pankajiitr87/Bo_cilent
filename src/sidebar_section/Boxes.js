@@ -13,11 +13,6 @@ export default function Boxes(props) {
     useEffect(() => {
         const loadJsonData = async () => {
           try {
-            // Dynamically import the JSON file based on props.pathS
-            // const jsonModule = await import(`../${props.pathS}/plot/DataDict.json`);
-            // console.log('props.dataDictss =', props.dataDictss);
-            // Set the imported data to the state
-            // setData(jsonModule.default); // Use jsonModule.default to get the actual data
             if (props.dataDictss.length > 0) {
                 // console.log('DataDict =', DataDict);
                 const data = props.dataDictss[0];
@@ -48,7 +43,6 @@ export default function Boxes(props) {
             }
         } catch (err) {
             console.error("Error loading JSON data:", err);
-            // setError("Failed to load data. Please check the path.");
           }
         };
     
@@ -62,8 +56,6 @@ export default function Boxes(props) {
         <div className='boxes'>
                     <div className="rect_ demo-dark">
                         <div className='key'>
-                            
-                            {/* <MdDateRange/> */}
                             <GrTransaction/>
                             <span>{keys[0]}</span>
                         </div>
@@ -75,9 +67,6 @@ export default function Boxes(props) {
                     </div>
                     <div className="rect demo-light">
                         <div className='key'>
-                            {/*  */}
-                            {/* <GrTransaction /> */}
-                            {/* <AiOutlineFieldNumber size={18}/> */}
                             <GoNumber size={18}/>
                             <span>{keys[3]}</span>
                         </div>
@@ -87,7 +76,6 @@ export default function Boxes(props) {
                     </div>
                     <div className="rect demo-lightUp">
                         <div className='key'>
-                            {/* <BiAddToQueue/> */}
                             <FaUser size={15}/>
                             <span>{keys[4]}</span>
                         </div>
@@ -97,7 +85,6 @@ export default function Boxes(props) {
                     </div>
                     <div className="rect demo-dark">
                         <div className='key'>
-                            {/* <FaUser height={50}/> */}
                             <GrUserNew size={15}/>
                             <span>{keys[5]}</span>
                         </div>

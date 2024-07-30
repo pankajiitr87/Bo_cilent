@@ -18,14 +18,10 @@ export default function SimpleLineChart(props) {
   useEffect(() => {
     const loadJsonData = async () => {
       try {
-        // Dynamically import the JSON file based on props.pathS
-        // const jsonModule = await import(`../${props.pathS}/plot/ReturningCustomer.json`);
-        // console.log('jsonModule.default =', jsonModule.default);
         // Set the imported data to the state
-        setData(props.returningCustomerrr); // Use jsonModule.default to get the actual data
+        setData(props.returningCustomerrr);
       } catch (err) {
         console.error("Error loading JSON data:", err);
-        // setError("Failed to load data. Please check the path.");
       }
     };
 
@@ -38,7 +34,6 @@ export default function SimpleLineChart(props) {
   return (
     <div className="simpleLine">
       <header className="header_simple">New Vs Returning Customers</header>
-      {/* <pre>{JSON.stringify(ss, null, 2)}</pre> */}
       <LineChart width={450} height={315} data={data}>
       
         <XAxis

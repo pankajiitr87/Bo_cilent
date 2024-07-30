@@ -4,28 +4,13 @@ import './csv.css';
 
 export default function Csv(props) {
     console.log('props.pathS =', props.pathS);
-    console.log('props.outletSummaryyy in csv =', props.outletSummaryyy);
+    // console.log('props.outletSummaryyy in csv =', props.outletSummaryyy);
     const [data, setData] = useState(null);
     const [error, setError] = useState("");
 
     useEffect(() => {
         // console.log('in useEffect in csv component');
         const loadCsvData = async () => {
-            // console.log('in loadCsvData function');
-            // try {
-            //     console.log('in try block of csv');
-                // Construct the relative path to fetch the CSV file from the public directory
-                // const csvPath = require(`../${props.pathS}/plot/SegmentSummary.csv`);
-                // console.log('csvPath =', csvPath);
-                // Fetch the CSV file as a text resource
-                // const response = await fetch(props.outletSummaryyy);
-                // console.log('response =', response);
-                // if (!response.ok) {
-                //     throw new Error(`HTTP error! Status: ${response.status}`);
-                // }
-                // const textData = await response.text();
-
-                // console.log('CSV content:', textData);
                 // Parse the CSV data using PapaParse
                 Papa.parse(props.segmentSummaryyy, {
                     header: true, // Optional: Treats the first row as headers
@@ -42,10 +27,6 @@ export default function Csv(props) {
                         setError("Failed to parse CSV data.");
                     }
                 });
-            // } catch (err) {
-            //     console.error("Error loading CSV data:", err);
-            //     setError("Failed to load data. Please check the path.");
-            // }
         };
 
         if (props.segmentSummaryyy) {
