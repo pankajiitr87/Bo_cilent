@@ -10,10 +10,6 @@ export default function Sidebar(props) {
         setActiveButton(layout);
         props.sendDataToParent(layout);
       };
-    
-    const handleClose =() => {
-        window.location.reload(window.location.href); // This will refresh the page
-    }
   return (
     <div className='sidebarData'>
         <div>
@@ -45,7 +41,7 @@ export default function Sidebar(props) {
             </button>
         </div>
         <div className='close'>
-            <button onClick={handleClose}>Close</button>
+            {/* <button onClick={handleClose}>Close</button> */}
         </div>
     </div>
   )

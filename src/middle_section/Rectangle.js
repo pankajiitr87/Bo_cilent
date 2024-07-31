@@ -58,28 +58,28 @@ export default function Rectangle({ setSelectedSegment }) {
     }, []);
 
     const data = [
-        {
-            x: [4.5, 3.5, 4.0, 1.0, 1.0, 2.0, 4.0],
-            y: [4.5, 4.5, 3.0, 3.5, 1.5, 0.5, 1.0],
-            text: ['Champion', 'Loyal', 'Loyal', 'Potential Loyal', 'Need Attention', 'Hibernating', 'Cannot Loose'],
-            mode: 'text',
-            textfont: {
-              color: 'black',
-              size: 13,
-              family: 'Arial',
-              weight: 'bold'
-            },
-            hoverinfo: 'none', // Disable default hover info
-            hovertemplate: '%{text}<extra></extra>'
-        }
-    ];
+      {
+          x: [4.5, 3.5, 4.0, 1.75, 1.75, 1.75, 4.0, 4.0, 0.25, 0.25],
+          y: [4.5, 4.5, 3.0, 3.5, 1.5, 0.5, 0.5, 1.5, 4.5, 2.0],
+          text: ['SuperChamp', 'Champ', 'Champ', 'PotentialChamp', 'NeedAttention', 'Hibernating', 'AtRisk', 'CannotLose','New','Lost'],
+          mode: 'text',
+          textfont: {
+            color: 'black',
+            size: 11.5,
+            family: 'Arial',
+            weight: 'bold'
+          },
+          hoverinfo: 'none', // Disable default hover info
+          hovertemplate: '%{text}<extra></extra>'
+      }
+  ];
 
     const layout = {
         xaxis: {
             range: [0, 5],
             showgrid: false,
             title: { // Add X-axis title
-              text: 'Recency', // Replace with your desired X-axis name
+              text: 'Frequency', // Replace with your desired X-axis name
               font: {
                 family: 'Arial',
                 size: 14,
@@ -92,7 +92,7 @@ export default function Rectangle({ setSelectedSegment }) {
             range: [0, 5],
             showgrid: false,
             title: { // Add Y-axis title
-              text: 'Frequency', // Replace with your desired Y-axis name
+              text: 'Recency', // Replace with your desired Y-axis name
               font: {
                 family: 'Arial',
                 size: 14,
@@ -110,119 +110,167 @@ export default function Rectangle({ setSelectedSegment }) {
             b: 28,
         },
         shapes: [
-            {
-              opacity: 0.5,
-              type: 'rect',
-              xref: 'x',
-              yref: 'y',
-              x0: 4.0,
-              y0: 4.0,
-              x1: 5.0,
-              y1: 5.0,
-              line: {
-                color: 'none',
-                width: 0
-              },
-              fillcolor: 'yellow',
-              customdata: 'Champion'
+          {
+            opacity: 0.5,
+            type: 'rect',
+            xref: 'x',
+            yref: 'y',
+            x0: 4.0,
+            y0: 4.0,
+            x1: 5.0,
+            y1: 5.0,
+            line: {
+              color: 'none',
+              width: 0
             },
-            {
-              opacity: 0.5,
-              type: 'rect',
-              xref: 'x',
-              yref: 'y',
-              x0: 3.0,
-              y0: 4,
-              x1: 4.0,
-              y1: 5,
-              line: {
-                color: 'none',
-                width: 0
-              },
-              fillcolor: 'blue',
-              customdata: 'Loyal'
+            fillcolor: 'yellow',
+            customdata: 'SuperChamp'
+          },
+          {
+            opacity: 0.5,
+            type: 'rect',
+            xref: 'x',
+            yref: 'y',
+            x0: 3.0,
+            y0: 4,
+            x1: 4.0,
+            y1: 5,
+            line: {
+              color: 'none',
+              width: 0
             },
-            {
-              opacity: 0.5,
-              type: 'rect',
-              xref: 'x',
-              yref: 'y',
-              x0: 3.0,
-              y0: 2.0,
-              x1: 5.0,
-              y1: 4.0,
-              line: {
-                color: 'none',
-                width: 0
-              },
-              fillcolor: 'blue',
-              customdata: 'Loyal'
+            fillcolor: 'blue',
+            customdata: 'Champ'
+          },
+          {
+            opacity: 0.5,
+            type: 'rect',
+            xref: 'x',
+            yref: 'y',
+            x0: 3.0,
+            y0: 2.0,
+            x1: 5.0,
+            y1: 4.0,
+            line: {
+              color: 'none',
+              width: 0
             },
-            {
-              opacity: 0.5,
-              type: 'rect',
-              xref: 'x',
-              yref: 'y',
-              x0: 0.0,
-              y0: 2.0,
-              x1: 3.0,
-              y1: 5.0,
-              line: {
-                color: 'none',
-                width: 0
-              },
-              fillcolor: 'red',
-              customdata: 'Potential Loyal'
+            fillcolor: 'blue',
+            customdata: 'Champ'
+          },
+          {
+            opacity: 0.5,
+            type: 'rect',
+            xref: 'x',
+            yref: 'y',
+            x0: 0.5,
+            y0: 2.0,
+            x1: 3.0,
+            y1: 5.0,
+            line: {
+              color: 'none',
+              width: 0
             },
-            {
-              opacity: 0.5,
-              type: 'rect',
-              xref: 'x',
-              yref: 'y',
-              x0: 3.0,
-              y0: 0.0,
-              x1: 5.0,
-              y1: 2.0,
-              line: {
-                color: 'none',
-                width: 0
-              },
-              fillcolor: 'purple',
-              customdata: 'Need Attention'
+            fillcolor: 'red',
+            customdata: 'PotentialChamp'
+          },
+          {
+            opacity: 0.5,
+            type: 'rect',
+            xref: 'x',
+            yref: 'y',
+            x0: 0.5,
+            y0: 1.0,
+            x1: 3.0,
+            y1: 2.0,
+            line: {
+              color: 'none',
+              width: 0
             },
-            {
-              opacity: 0.5,
-              type: 'rect',
-              xref: 'x',
-              yref: 'y',
-              x0: 0.0,
-              y0: 1.0,
-              x1: 3.0,
-              y1: 2.0,
-              line: {
-                color: 'none',
-                width: 0
-              },
-              fillcolor: 'green',
-              customdata: 'Hibernating'
+            fillcolor: 'purple',
+            customdata: 'NeedAttention'
+          },
+          {
+            opacity: 0.5,
+            type: 'rect',
+            xref: 'x',
+            yref: 'y',
+            x0: 0.5,
+            y0: 0.0,
+            x1: 3.0,
+            y1: 1.0,
+            line: {
+              color: 'none',
+              width: 0
             },
-            {
-              opacity: 0.5,
-              type: 'rect',
-              xref: 'x',
-              yref: 'y',
-              x0: 0.0,
-              y0: 0.0,
-              x1: 3.0,
-              y1: 1.0,
-              line: {
-                color: 'none',
-                width: 0
-              },
-              fillcolor: 'black',
-              customdata: 'Cannot Loose'
-            }
-        ]
+            fillcolor: 'green',
+            customdata: 'Hibernating'
+          },
+          {
+            opacity: 0.5,
+            type: 'rect',
+            xref: 'x',
+            yref: 'y',
+            x0: 3.0,
+            y0: 1.0,
+            x1: 5.0,
+            y1: 2.0,
+            line: {
+              color: 'none',
+              width: 0
+            },
+            fillcolor: 'black',
+            customdata: 'CannotLoose'
+          },
+          {
+            opacity: 0.5,
+            type: 'rect',
+            xref: 'x',
+            yref: 'y',
+            x0: 3.0,
+            y0: 0.0,
+            x1: 5.0,
+            y1: 1.0,
+            line: {
+              color: 'none',
+              width: 0
+            },
+            fillcolor: 'gold',
+            customdata: 'AtRisk'
+          },
+          {
+            opacity: 0.5,
+            type: 'rect',
+            xref: 'x',
+            yref: 'y',
+            x0: 0.0,
+            y0: 4.0,
+            x1: 0.5,
+            y1: 5.0,
+            line: {
+              color: 'none',
+              width: 0
+            },
+            fillcolor: 'cyan',
+            customdata: 'New'
+          },
+          {
+            opacity: 0.5,
+            type: 'rect',
+            xref: 'x',
+            yref: 'y',
+            x0: 0.0,
+            y0: 0.0,
+            x1: 0.5,
+            y1: 4.0,
+            line: {
+              color: 'none',
+              width: 0
+            },
+            fillcolor: 'grey',
+            customdata: 'Lost'
+          }
+      ]
     };
 
     const handleTextClick = (text) => {
