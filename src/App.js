@@ -81,7 +81,7 @@ function App() {
   const processInitialParams = () => {
     const {clientId, month, year } = getQueryParams();
     if ( clientId || month || year ) {
-      const message = `${clientId}/${date}`;
+      const message = `${clientId}/${month}/${year}`;
       console.log('message in processInitialParams =', message);
       setUserInfo(message)
       console.log('Initial message from URL:', message);
