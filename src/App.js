@@ -79,8 +79,8 @@ function App() {
 
   // Function to display or process the query parameters
   const processInitialParams = () => {
-    const {clientId, date } = getQueryParams();
-    if ( clientId || date) {
+    const {clientId, month, year } = getQueryParams();
+    if ( clientId || month || year ) {
       const message = `${clientId}/${date}`;
       console.log('message in processInitialParams =', message);
       setUserInfo(message)
