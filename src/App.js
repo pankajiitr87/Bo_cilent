@@ -99,7 +99,7 @@ function App() {
     }
   };
 
-  // Function to fetch data based on the message
+  // Function to fetch data based on the message 
   const fetchData = async (filePath) => {
     console.log('in fetchdat');
     try {
