@@ -31,7 +31,8 @@ function App() {
     const urlParams = new URLSearchParams(window.location.search);
     return {
       clientId: urlParams.get('clientId'),
-      date: urlParams.get('date')
+      month: urlParams.get('month'),
+      year: urlParams.get('year')
     };
   };
 
